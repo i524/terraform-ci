@@ -9,3 +9,9 @@ The image is based on [hashicorp/terraform](https://hub.docker.com/r/hashicorp/t
 1. [tfnotify](https://github.com/mercari/tfnotify)
 1. tzdata
    (Without tzdata `terraform plan` might fail when your .tf files include timezone because [`time.LoadLocation`](https://golang.org/pkg/time/#LoadLocation) requires zoneinfo files.)
+
+## Install
+
+```
+docker pull i524/terraform-ci:latest
+```
