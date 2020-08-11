@@ -1,4 +1,6 @@
-FROM hashicorp/terraform:light
+ARG BASE_TAG
+
+FROM hashicorp/terraform:${BASE_TAG}
 
 # install tzdata
 RUN apk update && apk --no-cache add tzdata
